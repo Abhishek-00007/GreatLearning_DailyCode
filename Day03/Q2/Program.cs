@@ -2,9 +2,9 @@
 
 class Book
 {
-    public string Title;
-    public string Author;
-    public int Year;
+    public string Title {get;set;}
+    public string Author {get;set;}
+    public int Year {get;set;}
 
     public Book(string title, string author, int year) {
         Title=title;
@@ -24,10 +24,10 @@ class Program
         string author=Console.ReadLine();
 
         Console.WriteLine("Enter book's year:");
-        int year = Convert.ToInt32(Console.ReadLine());
+        int year=Convert.ToInt32(Console.ReadLine());
 
-        Book book = new Book(title, author, year);
-        
+        Book book = new Book(title,author,year);
+
         Console.WriteLine("Book Title: "+book.Title);
         Console.WriteLine("Book Author: "+book.Author);
         Console.WriteLine("Book Year: "+book.Year);
